@@ -1,5 +1,11 @@
-export default {
-  multiply(a: number, b: number) {
-    return Promise.resolve(a * b);
-  },
+import React from 'react';
+import {View} from 'react-native';
+import Example from './Example'
+
+export default () => {
+  return (
+    <View>
+      <Example />
+    </View>
+  )
 };
