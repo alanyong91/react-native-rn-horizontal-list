@@ -1,6 +1,8 @@
 # react-native-rn-horizontal-list
 
-simple horizontal list
+## React Native Horizontal List
+
+A simple react native horizontal list
 
 ## Installation
 
@@ -8,14 +10,50 @@ simple horizontal list
 npm install react-native-rn-horizontal-list
 ```
 
+or
+
+```sh
+yarn add react-native-rn-horizontal-list
+```
+
 ## Usage
 
 ```js
-import RnHorizontalList from "react-native-rn-horizontal-list";
+import React, { useState, useEffect } from 'react';
+import RNHorizontalList from "react-native-rn-horizontal-list";
+  
+export default () => {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
 
-// ...
+  return (
+    <RNHorizontalList
+      loading={loading}
+      title="New Releases"
+      data={data}
+    />
+  );
+}
+```
 
-const result = await RnHorizontalList.multiply(3, 7);
+## Props
+
+```js
+loading: boolean;
+title: string | null;
+data: any[];
+```
+
+## View Sample
+
+```js
+import {HorizontalListExample} from "react-native-rn-horizontal-list";
+  
+export default () => {
+  return (
+    <HorizontalListExample />
+  );
+}
 ```
 
 ## Contributing
