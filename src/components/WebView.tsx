@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Modal, Dimensions, View, TouchableOpacity, Text } from 'react-native';
-// import { WebView } from 'react-native-webview';
 
 const styles = StyleSheet.create({
   view: {
@@ -36,10 +35,6 @@ export default ({ open, uri, onClose }: IWebViewProps) => (
         <Text style={styles.closeButtonText}>close</Text>
       </TouchableOpacity>
       <Text>{uri}</Text>
-      {/* {
-        uri &&
-        <WebView source={{ uri }} />
-      } */}
     </View>
   </Modal>
 )
