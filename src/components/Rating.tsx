@@ -30,9 +30,9 @@ export default ({rating}: IRatingProps) => {
 
   return (
     <View style={styles.ratingView}>
-      {[...Array(full)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../../assets/icons/star.png')} />)}
-      {[...Array(half)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../../assets/icons/half-star.png')} />)}
-      {[...Array(none)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../../assets/icons/no-star.png')} />)}
+      {[...Array(full)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../assets/icons/star.png')} />)}
+      {[...Array(half)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../assets/icons/half-star.png')} />)}
+      {[...Array(none)].map((_, i) => <Image key={i} style={styles.ratingIcon} source={require('../assets/icons/no-star.png')} />)}
     </View>
   )
 }

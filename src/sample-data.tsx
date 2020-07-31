@@ -3,14 +3,14 @@ const data: any[] = [
     id: 1,
     category: 'advertisement',
     title: 'Please subscribe to view more exclusive contents.',
-    image: require('../assets/images/localAd-1.jpg'),
+    image: require('./assets/images/localAd-1.jpg'),
     uri: 'https://www.imdb.com/title/tt0848228/'
   },
   {
     id: 2,
     category: 'advertisement',
     title: '2 months for only Rm15.90 for offline movies.',
-    image: require('../assets/images/localAd-2.jpg'),
+    image: require('./assets/images/localAd-2.jpg'),
     uri: 'https://www.imdb.com/title/tt7286456/'
   },
   {
