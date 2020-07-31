@@ -1,11 +1,5 @@
-import React from 'react';
-import {View} from 'react-native';
-import Example from './Example'
+import HorizontalListExample from './Example'
+import HorizontalList from './HorizontalList'
 
-export default () => {
-  return (
-    <View>
-      <Example />
-    </View>
-  )
-};
+export {HorizontalListExample};
+export default HorizontalList;

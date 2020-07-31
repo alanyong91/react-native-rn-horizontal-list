@@ -1,19 +1,22 @@
-import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
-import RnHorizontalList from 'react-native-rn-horizontal-list';
+import React, {useState, useEffect} from 'react';
+import { View } from 'react-native';
+import HorizontalList, {HorizontalListExample} from 'react-native-rn-horizontal-list';
+
+import SAMPLEDATA from './sample-data';
 
 export default function App() {
+  const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<any[]>([]);
+
+  useEffect(() => {
+    setData(SAMPLEDATA);
+    setLoading(false);
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <RnHorizontalList />
+    <View>
+      <HorizontalListExample />
+      <HorizontalList loading={loading} title="New Releases" data={data} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
